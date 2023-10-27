@@ -25,5 +25,19 @@ addDistance(3.39);
 addDistance(3.42);
 addDistance(4.06);
 addDistance(3.91);
+addDistance(4.15);
+
 
 console.log(distanceAchieved);
+
+function sumOfKm (array) {
+    let sum = 0
+    for (let i = 0; i < array.length; i++){
+    sum += array[i];
+    }
+    return sum;
+}
+
+const totalDistance = "Distancia recorrida " + sumOfKm(distanceAchieved);
+
+console.log(totalDistance);
